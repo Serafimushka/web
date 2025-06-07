@@ -1,0 +1,17 @@
+.ul__item{
+    color: red;
+}
+ol li:nth-child(2){
+    background-color: green;
+}
+tr:nth-child(2n+1){
+    background-color: yellow;
+}
+body {
+	color: blue;
+}
+
+ul li,
+ol li {
+	color: green;
+}

@@ -1,0 +1,18 @@
+body {
+	background-image: url('/img/mosaic.jpg');
+    background-repeat: repeat;
+    background-size: contain;  
+}
+.Webdeveloper{
+    list-style-type: none;
+    padding: 0;
+}
+.drinkscola{
+    list-style-type: lower-latin;
+}
+.pepsi{
+    list-style-type: square;
+}
+.Heathy{
+    list-style-type: armenian;
+}

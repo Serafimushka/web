@@ -1,0 +1,22 @@
+body{
+    background-image: url(https://github.com/erv1988/Web-development-tasks-v2024/blob/master/02/img/background-vertical.jpg?raw=true);
+    background-repeat: repeat-y;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 20px;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 40px;
+    color: red;
+    font-size: 40px;
+}
+h2{
+    text-decoration:underline ;
+}
+.text_1{
+    max-width: 600px;
+    background-color: rgba(255, 255, 255, .3);
+}
+.text_2{
+    max-width: 800px;
+}

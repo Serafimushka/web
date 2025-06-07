@@ -1,0 +1,63 @@
+.b-blue { 
+	background: blue; 
+} 
+.text{
+	background: blue; 
+    position: absolute;
+    left: 30px;
+    top: 0;
+}
+.myBox {
+	width: 50px;
+	height: 50px;
+	padding: 10px 30px 50px 190px;
+
+    background: rgb(189, 189, 189)  url(https://cdn.fishki.net/upload/post/2018/01/06/2476212/3-00.jpg?raw=true) 100px / contain no-repeat;
+}
+.card {
+	width: 150px;
+	height: 240px;
+	border: 1px solid black;
+	text-align: center;
+	line-height: 240px;
+	border-radius: 5px;
+	font-size: 1.5rem;
+}
+.card:after {
+	font-size: 80%;
+	font-weight: bold;
+}
+.card:not(:last-child)
+{
+    margin: 0 0 10px 0 ;
+}
+.spades,
+.spades:after {
+	content: "♤";
+	color: black;
+}
+
+.heart,
+.heart:after {
+	content: "♡";
+	color: red;
+}
+#button1 {
+	background-color: #4caf50; /* Green */
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 5px;
+    cursor: pointer;
+}
+ul li {
+	background: blue;
+}
+
+li + #thirditem {
+	background: yellow;
+}
+li + #thirditem{
+    background-color: green;
+}
