@@ -1,0 +1,19 @@
+a {
+	color: blue;
+}
+button {
+  background-color: #007bff; /* Синий цвет */
+  color: #ffffff; /* Белый цвет текста */
+  border: none; /* Убираем границу */
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  border-radius: 5px; /* Закругляем края */
+  cursor: pointer; /* Изменяем указатель при наведении */
+}
+
+button:hover {
+  background-color: #0056b3; /* Изменяем цвет кнопки при наведении */
+}
+
+.thgrey {
+	background-color: #EDEDED;
+}
