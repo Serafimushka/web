@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />		
+     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  	 <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+     <script src="https://unpkg.com/prop-types@15.6/prop-types.min.js"></script> 
+     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="myDiv"></div>
+    <script type = "text/babel">
+        const BootstrapCard = props => {
+            return <div class="card m-5 w-25">
+                        <img class="card-img-top" src={props.image}/>
+                        <div class="card-body">
+                        <h5 class="card-title">{props.title}</h5>
+                        <p class="card-text">{props.description}</p>
+                        <a href={props.buttonLink} class="btn btn-primary">{props.buttonLabel}</a>
+                        </div>
+                    </div>;
+        };
+
+        BootstrapCard.propTypes = {
+            title: PropTypes.string.isRequired,
+            imageUrl: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            buttonUrl: PropTypes.string.isRequired,
+            buttonLabel: PropTypes.string.isRequired,
+        };
+
+        const Hero = (props) => {
+            return (
+                <div className="container m-5">
+                    <h1 className="display-4">{props.title}</h1>
+                    <p className="lead">{props.description}</p>
+                    <a className="btn btn-primary btn-lg" href={props.buttonURL} role="button">
+                        {props.buttonLabel}
+                    </a>
+                </div>
+            );
+        };
+
+        Hero.propTypes = {
+            title: PropTypes.string.isRequired,
+            description: PropTypes.string.isRequired,
+            buttonLabel: PropTypes.string.isRequired,
+            buttonURL: PropTypes.string.isRequired,
+        };
+
+        const Alert = (props) =>{
+                return <div class="alert alert-danger" role="alert">
+                  {props.text}
+                </div>;
+        };
+            Alert.propTypes = {
+                text: PropTypes.string
+        };
+
+        ReactDOM.render(
+            <div>
+              <BootstrapCard title="Bob Dylan"
+                description="Bob Dylan (born Robert Allen Zimmerman, May 24, 1941) is an American singer-songwriter."
+                buttonLink="https://en.wikipedia.org/wiki/Bob_Dylan"
+                buttonLabel="Go to wikipedia"
+                image="bob.jpg"/>
+              <Hero 
+                title="Welcome to react" 
+                description="React is the most popular rendering library in the world" 
+                buttonLabel="Go to the official website"
+                buttonURL="https://reactjs.org/" 
+                image=""/>     
+              <Alert text="OMG! Something really bad has happened!"/>  
+            </div>, myDiv);
+    </script>
+</body>
+</html>

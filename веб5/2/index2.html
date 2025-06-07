@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="myDiv"></div>
+  
+  <script type="text/babel">
+    const customer = {
+      first_name: "Bob",
+      last_name: "Dylan"
+    };
+    // Вставляем в <div> тега
+    const output = (
+      <div>
+        <h1>My name is {customer.first_name}</h1>
+        <h2>My last name is {customer.last_name}</h2>
+      </div>
+    );
+    ReactDOM.render(output, document.querySelector("#myDiv"));
+  </script>
+</body>
+</html>

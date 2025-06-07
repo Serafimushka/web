@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+  <div id="myDiv"></div>
+  
+  <script type="text/babel">
+    const animals = ['Horse', 'Turtle', 'Elephant', 'Monkey'];
+    const animalsInHTML = animals.map(animal => <li key={animal}>{animal}</li>);
+    const content = <ul>{animalsInHTML}</ul>;
+    ReactDOM.render(content, document.querySelector("#myDiv"));
+  </script>
+</body>
+</html>
