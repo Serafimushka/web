@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset = "utf-8">
+	</head>
+	
+	<body>
+		<h1>Привет мир</h1>
+		
+		<p><em>Давно выяснено</em>, что при оценке дизайна и композиции читаемый текст <s>мешает сосредоточиться.</s></p>
+		<p><strong>Lorem Ipsum</strong> используют потому,<br>что тот обеспеивает более или менее стандартное <u>заполнение шаблона</u>, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации.</p>
+		
+		<h3>Список покупок:</h3>
+		<ul>
+			<li>Хлеб</li>
+			<li>Молоко</li>
+			<li>Картошка</li>
+		</ul>
+		
+		<h3>Инструкция:</h3>
+		<ol>
+			<li>Вставить батарейки в пульт</li>
+			<li>Нажать кнопку ВКЛ</li>
+		</ol>
+		
+		<p>
+			Молоко<ol>1 литр</ol> <br>Картошка<ol>2кг</ol>
+		</p>
+		
+		<p><a href = "index-2.html">О нас</a></p>
+		<img src = "img/a.jpeg" height = "200" width = "400">
+		<p><a href = "img/a.jpeg" download>Скачать архив</a></p>
+		
+		<svg xmlns="http://www.w3.org/2000/svg" height="500"width="400">
+			<path d= "M100 350 250 50m0 0 150 300" stroke= "red" stroke-width= "3"fill= "none"/>
+			<path d= "M175 200h150" stroke= "green" stroke-width= "3" fill= "none"/>
+			<path d="M100 350q150-300 300 0"stroke="#00f"stroke-width="5"fill="none"/>
+			<g stroke="#000"stroke-width="3">
+				<circle cx="100"cy="350"r="3"/>
+				<circle cx="250"cy="50"r="3"/>
+				<circle cx="400"cy="350"r="3"/>
+			</g>
+			<!-- Label the points -->
+			<g font-size= "30" font-family= "sans-serif" text-anchor= "middle">
+				<text x="100" y="350" dx="-30">A</text>
+				<text x="250" y="50" dy="-10">B</text>
+				<text x="400" y="350" dx="30">C</text>
+			</g>
+		</svg>
+		
+		<svg width="300" height="130" xmlns="http://www.w3.org/2000/svg">
+        <rect width="200" height="100" x="10" y="10" rx="20" ry="20" fill="red" />
+    </svg>
+    <svg height="140" width="500" xmlns="http://www.w3.org/2000/svg">
+        <ellipse rx="100" ry="50" cx="120" cy="80"
+                 style="fill:blue;stroke:green;stroke-width:3" />
+    </svg>
+    <svg height="210" width="500" xmlns="http://www.w3.org/2000/svg">
+        <polyline points="0,0 50,150 100,75 150,50 200,140 250,140"
+                  style="fill:none;stroke:green;stroke-width:3" />
+    </svg>
+		
+		<video width="320" height="240" controls autoplay preload="auto">
+			<source src="media/1.mp4" type="video/mp4">
+		</video>
+		
+		<audio controls autoplay preload="auto" loop>
+			<source src="media/audio.mp3" type="audio/mpeg">
+		</audio>
+		
+		
+	</body>
+</html>
