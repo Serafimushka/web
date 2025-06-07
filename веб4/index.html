@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+<body>
+	<div class="scoreboard">
+		<h2>Количество Ваших очков: <span id="score">0</span></h2>
+		<button id="reset">Играть заного</button>
+	</div>
+	<div class="game-container">
+		<div class="you">
+			<h3>Вы</h3>
+			<img src="img/r.png" alt="Камень" class="selection" onclick="makeSelection('rock')">
+			<img src="img/p.png" alt="Бумага" class="selection" onclick="makeSelection('paper')">
+			<img src="img/s.png" alt="Ножницы" class="selection" onclick="makeSelection('scissors')">
+		</div>
+		<div class="computer">
+			<h3>Компьютер</h3>
+			<img src="img/r.png" alt="Камень" class="selection">
+			<img src="img/p.png" alt="Бумага" class="selection">
+			<img src="img/s.png" alt="Ножницы" class="selection">
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
